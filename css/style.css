@@ -9,7 +9,6 @@ body{
         "hd hd"
         "nv mn"
         "ft ft";
-    gap: 15px;
     padding: 20px;
 }
 
@@ -30,7 +29,6 @@ body{
     grid-area: mn;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
     padding: 20px;
 }
 
