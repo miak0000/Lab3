@@ -6,17 +6,20 @@
 .header{
     background-color: #03695e;
     grid-area: hd;
+    padding: 20px;
 
 }
 
 .nav{
     background-color: #6daf5f;
     grid-area: nv;
+    padding: 20px;
 }
 
 .main{
     background-color: #239dca;
     grid-area: mn;
+    padding: 20px;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
 }
