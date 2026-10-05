@@ -4,33 +4,57 @@
 }
 .header{
     background-color: #03695e;
-    grid-column: 1/-1;
+    grid-area: hd;
+
 }
 
 .nav{
     background-color: #6daf5f;
-    display:grid;
-    grid-template-columns: 220px 1fr;
+    grid-area: nv;
 }
 
 .main{
     background-color: #239dca;
+    grid-area: mn;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .Card-1{
     background-color: #a5c6db;
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
 }
 .Card-2{
     background-color: #e7e9d8;
-    grid-template-columns: repeat(2, 1fr);
 }
 .Card-3{
     background-color: #ffd44c;
-    grid-template-columns: repeat(2, 2fr);
 }
 
 .footer{
     background-color: #fdba40;
-    grid-column: 1/-1;
+    grid-area: ft;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "hd hd"
+        "nv mn"
+        "ft ft";
+}
+@media (max-width: 768px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "hd"
+            "nv"
+            "mn"
+            "ft";
+    }
+    .main{
+        display:flex;
+        flex-direction: column;
+    }
 }
