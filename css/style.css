@@ -11,6 +11,13 @@ body{
         "ft ft";
 }
 
+.main{
+    background-color: #239dca;
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .header{
     background-color: #03695e;
     grid-area: hd;
@@ -21,13 +28,6 @@ body{
     background-color: #6daf5f;
     grid-area: nv;
     padding: 20px;
-}
-
-.main{
-    background-color: #239dca;
-    grid-area: mn;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .footer{
