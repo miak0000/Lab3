@@ -2,40 +2,6 @@
     margin: 0;
     padding: 0;
 }
-.header{
-    background-color: #03695e;
-    grid-area: hd;
-}
-
-.nav{
-    background-color: #6daf5f;
-    grid-area: nv;
-}
-
-.main{
-    background-color: #239dca;
-    grid-area: mn;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.Card-1{
-    background-color: #a5c6db;
-    grid-column: 1 / -1;
-}
-.Card-2{
-    background-color: #e7e9d8;
-}
-.Card-3{
-    background-color: #ffd44c;
-}
-
-.footer{
-    background-color: #fdba40;
-    grid-area: ft;
-    padding: 70px;
-}
-
 body{
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -43,8 +9,52 @@ body{
         "hd hd"
         "nv mn"
         "ft ft";
+    gap: 15px;
     padding: 20px;
 }
+
+.header{
+    background-color: #03695e;
+    grid-area: hd;
+    padding: 20px;
+}
+
+.nav{
+    background-color: #6daf5f;
+    grid-area: nv;
+    padding: 20px;
+}
+
+.main{
+    background-color: #239dca;
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.footer{
+    background-color: #fdba40;
+    grid-area: ft;
+    padding: 20px;
+}
+
+.Card-1{
+    background-color: #a5c6db;
+    grid-column: 1 / -1;
+    padding: 20px;
+}
+.Card-2{
+    background-color: #e7e9d8;
+    padding: 20px;
+}
+.Card-3{
+    background-color: #ffd44c;
+    padding: 20px;
+}
+
+
 @media (max-width: 768px){
     body{
         grid-template-columns: 1fr;
@@ -55,7 +65,7 @@ body{
             "ft";
     }
     .main{
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
 }
